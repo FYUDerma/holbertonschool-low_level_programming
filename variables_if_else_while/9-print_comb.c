@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	char number;
+	int number;
 
 	for (number = 0; number < 10; number++)
 	{
@@ -22,6 +22,5 @@ int main(void)
 			putchar('$');
 		}
 	}
-	putchar('\n');
 	return (0);
 }
