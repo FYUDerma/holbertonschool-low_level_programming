@@ -14,14 +14,16 @@ void times_table(void)
 		{
 			result = x * y;
 
-			if (result < 10)
-			{
-				_putchar(' ');
-			}
-
 			if (result >= 10)
 			{
 				_putchar('0' + (result / 10));
+			}
+			else
+			{
+				if (y != 0)
+				{
+					_putchar(' ');
+				}
 			}
 			_putchar('0' + (result % 10));
 
