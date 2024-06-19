@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include "main.h"
 /**
- * main - Entry point
+ * print_alphabet - print a to z
+ * Description: Function print_alphabet print alphabet in uppercase from a to z
  *
  * Return: Always 0 (Success)
  */
