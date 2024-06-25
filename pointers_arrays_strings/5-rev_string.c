@@ -1,16 +1,15 @@
-#include "holberton.h"
+#include "main.h"
 #include <stdio.h>
 
 /**
  * _strlen - returns the length of a string.
  * @s: string
  *
- * Description: returns the length of a string.
  * Return: len of string
  */
-int		_strlen(char *s)
+int _strlen(char *s)
 {
-	int	len = 0;
+	int len = 0;
 
 	while (s[len])
 		len++;
@@ -18,16 +17,15 @@ int		_strlen(char *s)
 }
 
 /**
- * rev_string - that reverses a string.
+ * rev_string - reverses a string.
  * @s: string
  *
- * Description: that reverses a string.
  * Return: void
  */
-void	rev_string(char *s)
+void rev_string(char *s)
 {
-	int	i, len = _strlen(s);
-	char	temp;
+	int i, len = _strlen(s);
+	char temp;
 
 	i = 0;
 	while (i < len--)
