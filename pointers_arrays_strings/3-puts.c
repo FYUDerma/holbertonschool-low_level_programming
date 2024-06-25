@@ -2,7 +2,7 @@
 #include "main.h"
 #include <ctype.h>
 /**
- * _puts : print a string
+ * _puts - print a string
  * @str : pointer string
  *
  * Return: Always 0 (Success)
