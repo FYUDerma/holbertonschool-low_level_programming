@@ -30,11 +30,11 @@ int _atoi(char *s)
 			started = 1;
 			digit = *s - '0';
 
-			if (sign == 1 && result > (INT_MAX - digit) / 10)
+			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))
 			{
 				return (INT_MAX);
 			}
-			else if (sign == -1 && -result < (INT_MIN + digit) / 10)
+			else if (result < INT_MIN / 10 || (result == INT_MIN / 10 && digit > -(INT_MIN % 10)))
 			{
 				return (INT_MIN);
 			}
