@@ -15,12 +15,10 @@ int _atoi(char *s)
 	int started = 0;
 	int digit;
 
-	while (*s) 
+	while (*s)
 	{
 		if (*s == '-')
-		{
 			sign *= -1;
-		}
 		else if (*s == '+')
 		{
 			/* Print nothing */
@@ -30,21 +28,25 @@ int _atoi(char *s)
 			started = 1;
 			digit = *s - '0';
 
-			if (result > INT_MAX / 10 || (result == INT_MAX / 10 && digit > INT_MAX % 10))
+			if (sign == 1)
 			{
-				return (INT_MAX);
+				if (result > (INT_MAX - digit) / 10)
+				{
+					return (INT_MAX);
+				}
 			}
-			else if (result < INT_MIN / 10 || (result == INT_MIN / 10 && digit > -(INT_MIN % 10)))
+			else
 			{
-				return (INT_MIN);
+				if (result > (INT_MAX - digit) / 10)
+				{
+					return (INT_MIN);
+				}
 			}
 
 			result = result * 10 + digit;
 		}
 		else if (started)
-		{
 			break;
-		}
 		s++;
 	}
 	return (sign * result);
