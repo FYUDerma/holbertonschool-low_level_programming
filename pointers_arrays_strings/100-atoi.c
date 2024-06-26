@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include "main.h"
-#include <ctype.h>
+#include <limits.h>
 /**
  * _atoi - convert all sprint in integer
  * @s : string
@@ -13,6 +13,7 @@ int _atoi(char *s)
 	int sign = 1;
 	int result = 0;
 	int started = 0;
+	int digit;
 
 	while (*s) 
 	{
@@ -27,7 +28,18 @@ int _atoi(char *s)
 		else if (*s >= '0' && *s <= '9')
 		{
 			started = 1;
-			result = result * 10 + (*s - '0');
+			digit = *s - '0';
+
+			if (sign == 1 && result > (INT_MAX - digit) / 10)
+			{
+				return (INT_MAX);
+			}
+			else if (sign == -1 && -result < (INT_MIN + digit) / 10)
+			{
+				return (INT_MIN);
+			}
+
+			result = result * 10 + digit;
 		}
 		else if (started)
 		{
@@ -35,5 +47,5 @@ int _atoi(char *s)
 		}
 		s++;
 	}
-	return sign * result;
+	return (sign * result);
 }
