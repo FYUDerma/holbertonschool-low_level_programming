@@ -19,7 +19,7 @@ void print_array(int *a, int n)
 		len++;
 	}
 
-	if (len == 0 && n == 0)
+	if (len == 0 && n <= 0)
 	{
 		printf("\n");
 	}
