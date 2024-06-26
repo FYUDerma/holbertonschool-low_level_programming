@@ -12,7 +12,7 @@
 void print_array(int *a, int n)
 {
 	int index = 0;
-	int len;
+	int len = 0;
 
 	while (a[len])
 	{
