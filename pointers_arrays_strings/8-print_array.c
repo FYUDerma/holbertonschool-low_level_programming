@@ -11,11 +11,20 @@
 
 void print_array(int *a, int n)
 {
-	int index;
+	int index = 0;
 
-	for (index = 0; index < n; index++)
+	while (a[index])
 	{
-		if (n >= 0)
+		index++;
+	}
+
+	if (index == 0 && n == 0)
+	{
+		printf("\n");
+	}
+	else
+	{
+		for (; index < n; index++)
 		{
 			if (index == n - 1)
 			{
@@ -25,10 +34,6 @@ void print_array(int *a, int n)
 			{
 				printf("%d, ", a[index]);
 			}
-		}
-		else
-		{
-			printf("\n");
 		}
 	}
 }
