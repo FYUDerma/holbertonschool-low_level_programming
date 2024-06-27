@@ -12,16 +12,16 @@
 void main(void)
 {
     int len, password;
+    int index;
 
     len = 24;
 
     /* lowercase Caracter */
-    char min[26];
-    int index;
+    char low[26];
 
     for (index =0; index < 26; index++)
     {
-        min[index] = 'a' + index;
+        low[index] = 'a' + index;
     }
 
     /* uppercase Caracter */
@@ -32,6 +32,6 @@ void main(void)
         upp[index] = 'A' + index;
     }
 
-    printf("%c ", min[index]);
+    printf("%c ", low[index]);
     printf("%c ", upp[index]);
 }
