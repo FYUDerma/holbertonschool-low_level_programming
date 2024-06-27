@@ -9,7 +9,7 @@
  * Return: Always 0 (Success)
  */
 
-void main(void)
+int main(void)
 {
     int len, password;
     int index;
@@ -32,6 +32,15 @@ void main(void)
         upp[index] = 'A' + index;
     }
 
-    printf("%c ", low[index]);
-    printf("%c ", upp[index]);
+    /* special Caracter */
+    char carac[] = "!@#$%^&*()_+[]{}|;:',.<>?/`~";
+
+    /* Digit */
+
+    int num[10];
+
+    for (index = 0; index < 10; index++)
+    {
+        num[index] = '0' + index;
+    }
 }
