@@ -1,6 +1,8 @@
 .vscode
 /pointers_arrays_strings/*-main.c
 
-# Complied File
-
-/pointers_arrays_strings/0-strcat
+# Compiled object files
+*.o
+*.ko
+*.obj
+*.elf
