@@ -1,1 +1,1 @@
-Project 2: C - Pointers, arrays and strings
+Project 16: C - Even More, Pointers, arrays and strings
