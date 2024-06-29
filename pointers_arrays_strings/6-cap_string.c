@@ -18,7 +18,7 @@ char *cap_string(char *str)
 		str[i] -= 32;
 	}
 
-	while (str[i] != '0')
+	while (str[i] != '\0')
 	{
 		for (j = 0; separators[j] != '\0'; j++)
 		{
