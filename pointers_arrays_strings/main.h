@@ -1,10 +1,16 @@
 #ifndef MAIN_H
 #define MAIN_H
 
+/* Stardart Libraries*/
+#include <unistd.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <ctype.h>
+
 /* Standard Function */
 int _putchar(char c);
 
-/* Project 13 Function
+/* Project 2X02 Function
  * Pointer and Arrays
  */ 
 void reset_to_98(int *n);
@@ -19,7 +25,7 @@ void print_array(int *a, int n);
 char *_strcpy(char *dest, char *src);
 int _atoi(char *s);
 
-/* Project 14 Function
+/* Project 3X03 Function
  * More Pointer and Arrays
  */
 char *_strcat(char *dest, char *src);
@@ -30,5 +36,17 @@ void reverse_array(int *a, int n);
 char *string_toupper(char *);
 char *cap_string(char *);
 char *leet(char *);
+
+/* Project 1X04 Function
+ * Even More Pointer and Arrays
+ */
+char *_memset(char *s, char b, unsigned int n);
+char *_memcpy(char *dest, char *src, unsigned int n);
+char *_strchr(char *s, char c);
+unsigned int _strspn(char *s, char *accept);
+char *_strpbrk(char *s, char *accept);
+char *_strstr(char *haystack, char *needle);
+void print_chessboard(char (*a)[8]);
+void print_diagsums(int *a, int size);
 
 #endif 
