@@ -4,7 +4,7 @@
 /* Stardart Libraries*/
 #include <unistd.h>
 #include <stdio.h>
-#include <unistd.h>
+#include <string.h>
 #include <ctype.h>
 
 /* Standard Function */
