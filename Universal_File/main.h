@@ -10,4 +10,4 @@
 /* Standard Function */
 int _putchar(char c);
 
-#endif 
+#endif
