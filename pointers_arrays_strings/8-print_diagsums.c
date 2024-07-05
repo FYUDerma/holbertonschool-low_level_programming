@@ -10,8 +10,8 @@
 
 void print_diagsums(int *a, int size)
 {
-	int first_diagonals;
-	int second_diagonals;
+	int first_diagonals = 0;
+	int second_diagonals = 0;
 	int i, j; /* Index first_diagonal and second_diagonals */
 
 	for (i = 0; i < size; i++)
