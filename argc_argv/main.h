@@ -7,6 +7,9 @@
 #include <string.h>
 #include <ctype.h>
 
+/* Macro */
+#define UNUSED(x) (void)(x)
+
 /* Standard Function */
 int _putchar(char c);
 
