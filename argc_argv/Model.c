@@ -1,10 +1,13 @@
 #include "main.h"
 
 /**
- * reset_to_98 - Point n to 98
- * @n : Pointer n
- *
+ * main - Entry point
+ * @argc : Argc (count)
+ * @argv : Argv (vector)
  * Return: Always 0 (Success)
  */
 
+int main(int argc, char *argv[])
+{
 
+}
