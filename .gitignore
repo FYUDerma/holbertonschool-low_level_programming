@@ -1,5 +1,6 @@
 .vscode
 /pointers_arrays_strings/*-main.c
+/malloc_free/*-main.c
 
 # Compiled C files
 *.c~
@@ -15,3 +16,4 @@
 *.ko
 *.obj
 *.elf
+
