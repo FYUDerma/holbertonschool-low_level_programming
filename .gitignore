@@ -1,6 +1,15 @@
 .vscode
 /pointers_arrays_strings/*-main.c
 
+# Compiled C files
+*.c~
+*.h~
+*.so
+*.a
+*.lib
+*.bin
+*.exe
+
 # Compiled object files
 *.o
 *.ko
