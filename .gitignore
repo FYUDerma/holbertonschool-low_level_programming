@@ -1,6 +1,7 @@
 .vscode
 /pointers_arrays_strings/*-main.c
-/malloc_free/*-main.c
+/more_malloc_free/malloc_free/*-main.c
+/more_malloc_free/*-main.c
 
 # Compiled C files
 *.c~
