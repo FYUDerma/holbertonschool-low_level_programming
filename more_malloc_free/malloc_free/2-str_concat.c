@@ -15,18 +15,15 @@ char *str_concat(char *s1, char *s2)
 	int s2_len;
 	char *array;
 
-	if (s1 == NULL)
+	if (s1 == NULL || s2 == NULL)
 		s1 = "";
-	if (s2 == NULL)
 		s2 = "";
-
 	s1_len = len(s1);
 	s2_len = len(s2);
 
 	array = malloc(s1_len + s2_len + 1);
 	if (array == NULL)
 		return (NULL);
-
 	for (i = 0; i < s1_len; i++)
 	{
 		array[i] = s1[i];
