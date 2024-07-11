@@ -2,19 +2,6 @@
 #define DOG_H
 
 /**
- * struct dog - dog structure
- * @name: Name of the Dog
- * @age: Age of the Dog
- * @owner: Ower of the Dog
- */
-struct dog
-{
-	char *name;
-	float age;
-	char *owner;
-};
-
-/**
  * struct dog_t - dog structure
  * @name: Name of the Dog
  * @age: Age of the Dog
