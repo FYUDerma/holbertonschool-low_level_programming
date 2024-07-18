@@ -9,6 +9,9 @@
 #include <stdlib.h>
 #include <stdarg.h>
 
+/* Standar Function */
+int _putchar(char c);
+
 /* Function Prototype */
 int sum_them_all(const unsigned int n, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
