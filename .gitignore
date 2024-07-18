@@ -4,6 +4,7 @@
 /more_malloc_free/*-main.c
 /structures_typedef/*-main.c
 /functon_pointers/*-main.c
+/variadic_functions/*-main.c
 
 
 # Compiled C files
