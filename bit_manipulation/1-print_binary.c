@@ -7,6 +7,7 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int temp = 1;
+	int flag = 0;
 
 	if (n == 0)
 	{
@@ -18,8 +19,11 @@ void print_binary(unsigned long int n)
 	while (temp != 0)
 	{
 		if ((n & temp) != 0)
+		{
 			_putchar('1');
-		else
+			flag = 1;
+		}
+		else if (flag == 1)
 			_putchar('0');
 		temp >>= 1;
 	}
